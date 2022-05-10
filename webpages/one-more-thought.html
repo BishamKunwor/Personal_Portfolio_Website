@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One More Thought</title>
+    <link rel="stylesheet" href="../css/HeaderFooter.css">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .inspiredPage {
+            background: url(../photos/one-more.PNG) no-repeat;
+            left: 4em;
+            background-size: cover;
+        }
+        
+        .myPage {
+            background: url(../photos/navigation.PNG) no-repeat;
+            right: 4em;
+            background-size: cover;
+        }
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        hr {
+            opacity: .2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        span {
+            display: inline-block;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin: 1em 1.1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- All the header icon and menu contains in header section -->
+    <header class="header">
+        <div class="navigationContainer">
+            <div><a href="../home.html" class="logo">N</a> </div>
+            <div class="menuBar">
+                <ul class="menuContainer">
+                    <li><a class="menu" href="../home.html">Home</a></li>
+                    <li><a class="menu1" href="cv.html">CV</a></li>
+                    <li><a class="menu1" href="Blog.html">Blog</a></li>
+                    <li><a class="menu" href="research.html">Research</a></li>
+                    <li><a class="menu" href="contact.html">Contact us</a></li>
+                    <li><a class="menu" href="register.html">Register</a></li>
+                    <li><a class="menu" href="login.html">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-main">
+        <a href="https://www.spotify.com/np-en/">
+            <div class="inspiredPage screenshot cmn" onmouseover="setTimeout(changePicture,150)" onmouseout="setTimeout(originalPicture, 150)"></div>
+        </a>
+        <script>
+            // change picture of inspired page function starts here 
+            function changePicture() {
+                var data = document.getElementsByClassName("inspiredPage")[0];
+                data.style.cssText = "background: url(../photos/one-more-1.PNG) no-repeat; background-size: cover;";
+            }
+
+            // after mouse gets off the script is places original picture 
+            function originalPicture() {
+                document.getElementsByClassName("inspiredPage")[0].style.cssText = "background: url(../photos/one-more.PNG) no-repeat; background-size: cover;";
+            }
+            // changes the picture of my page 
+
+            function changePictureMyPage() {
+                var data = document.getElementsByClassName("myPage")[0];
+                data.style.cssText = "background: url(../photos/navigation-hover.PNG) no-repeat; background-size: cover;";
+            }
+            to
+
+            function original() {
+                document.getElementsByClassName("myPage")[0].style.cssText = "background: url(../photos/navigation.PNG) no-repeat; background-size: cover;";
+            }
+        </script>
+        <a href="research.html">
+            <div class="myPage screenshot cmn" onmouseover="setTimeout(changePictureMyPage(), 150)" onmouseout="setTimeout(original, 150)"></div>
+        </a>
+        <!-- comparision box below here  -->
+        <div class="letterContainer cmn">
+            <div class="leftPage comparisionContainer">
+                <div class="heading">
+                    <h1>Inspired Page</h1>
+                </div>
+                <hr>
+                <span>While listening music on spotify web, going into different tabs; I saw hover effects on
+                        navigation links. These hover effect were efficient way to make an illusion of a buttion in
+                        something like the text. The text with hover effect could be made to appear as if it was an
+                        actual button.
+                    </span>
+            </div>
+            <div class="lineSeparator"></div>
+            <div class="rightPage comparisionContainer">
+                <div class="heading">
+                    <h1>My Page</h1>
+                </div>
+                <hr>
+                <span>
+                        The concept of this navigaiton link hover effect was considered and used in this website by
+                        giving the text some effects. Whenever the user hover over the navigation link, a white button
+                        would appear beneath the text making an illusion of a digital buttion being present. Each button
+                        was colored white to match the site design.
+                    </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section contains links and copyright content and gets its style from the main css file -->
+
+    <footer class="footer">
+        <div class="mainFooter">
+            <ul class="footerContainer">
+                <li><a href="_blank">About</a></li>
+                <li><a href="_blank">FAQ's</a></li>
+                <li><a href="_blank">Services</a></li>
+                <li><a href="_blank">Policies</a></li>
+                <li><a href="_blank">API</a></li>
+                <li><a href="_blank">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="copyrightFooter">&copy; Copyright | Bisham Kunwor</div>
+    </footer>
+
+</body>
+
+</html>

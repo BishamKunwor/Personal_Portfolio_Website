@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Bisham Kunwor</title>
+    <link rel="stylesheet" href="../css/HeaderFooter.css">
+
+
+    <style>
+        /* this is the common property for each cells in the table */
+        
+        .common {
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 0 5px 30px -14px rosybrown;
+        }
+        /* common property for list items and paragraph */
+        
+        p,
+        li {
+            background-color: white;
+        }
+        /* styling for the topic like introduction section */
+        
+        .leftSide {
+            font-size: 35px;
+            width: 300px;
+        }
+        /* styling for the right content side */
+        
+        .rightSide {
+            padding: 30px 60px;
+            text-align: justify;
+            font-weight: 200;
+            font-size: 24px;
+            line-height: 35px;
+            word-spacing: 5px;
+        }
+        /* transition for all table header  */
+        
+        th {
+            transition: .3s;
+        }
+        
+        th:hover {
+            transform: scale(1.04);
+            box-shadow: 0 5px 60px -14px rosybrown;
+        }
+        /* removes the unwanted white color from the header navigation  */
+        
+        .headerHref {
+            background-color: #f8edeb;
+        }
+        /* styling for all the dynamic image  */
+        
+        .image {
+            border-radius: 1.3em;
+        }
+    </style>
+</head>
+
+<!-- box sizing is enabled in order to not let elements dynamically occupy the saace they require -->
+
+<body style="box-sizing: border-box;">
+
+    <!-- All the header icon and menu contains in header section -->
+    <header class="header">
+        <div class="navigationContainer">
+            <div><a href="../home.html" class="logo">N</a> </div>
+            <div class="menuBar">
+                <ul class="menuContainer">
+                    <li class="headerHref"><a class=" menu " href="../home.html ">Home</a></li>
+                    <li class="headerHref"><a class="menu1" href="cv.html">CV</a></li>
+                    <li class="headerHref"><a class=" menu1 " href="blog.html ">Blog</a></li>
+                    <li class="headerHref"><a class="menu" href="research.html">Research</a></li>
+                    <li class="headerHref"><a class=" menu " href="contact.html ">Contact us</a></li>
+                    <li class="headerHref"><a class="menu" href="register.html">Register</a></li>
+                    <li class="headerHref"><a class=" menu " href="login.html ">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- it is the secton i.e., body of the document and spacing is added from top and all table are aligned at center -->
+    <div class="cvContainer" style="margin: 0 60px; text-align: center;">
+
+
+        <div class="cvTitleContainer common " style="height: 60px;
+        width: 35%;
+        margin: auto;
+        margin-top: 30px;">
+            <!-- styles the title of the page i.e., CV -->
+            <span class="cvTitle " style="font-size: 50px;
+            background-color: transparent;
+            font-weight: 600;">Curriculum Vitae</span>
+        </div>
+        <!-- contains the image and changes the images dynamically by using js -->
+        <div id="imageContainer" style="margin-top: 50px;">
+            <img src="../photos/me.jpg" height="300px" class="image">
+        </div>
+        <script>
+            // this script changes the image of the page dynamically
+            var images = ["../photos/me1.jpg", "../photos/me2.jpg", "../photos/me3.jpg", "../photos/me.jpg"];
+
+            var x = 0;
+
+            var imgs = document.getElementById('imageContainer');
+
+            setInterval(slider, 3000);
+
+            function slider() {
+
+                if (x < images.length) {
+                    x = x + 1;
+                } else {
+                    x = 1;
+                }
+                imgs.innerHTML = "<img src=" + images[x - 1] + " height='300px' class='image'>";
+            }
+        </script>
+        <!-- All the cv and cv information is contained inside this div -->
+        <div class="dataContainer ">
+            <!-- creating table by using tabel tag and adds space betwn the cells of the table -->
+            <table style="border-spacing: 60px;
+            margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th class="leftIntroductionTitle leftSide common ">Introduction</th>
+                        <th class="rightData rightSide common ">Hello, I am Bisham Kunwor; currently a disciple of Islington College of IT. As from me being a child, I was always facinated by how IT is shaping our lives; it was the primary reason for me to get involved in IT sector. Currently
+                            I've been learning a lots of skills including Java, web-development along with cisco routing and switching. Not only including these skills I'm also involved in photo editing as designing is my hobby (Discamer, I am not a good
+                            Designer!). This website is the demonstration of my work in css, js and html. I hope you would go through it and provide me your feedback.</th>
+                        <th class="image"></th>
+                    </tr>
+                    <tr>
+                        <th class="common leftSide contact ">Contact Information</th>
+                        <th class="common rightSide contactInformation ">
+                            <p>Address : Maitidevi-30, Kathmandu</p>
+                            <p>Phone No. : 9817843217</p>
+                            <p>Telephone No. : 014416467</p>
+                            <p>Email : novelian.nova@gmail.com (Primary)</p>
+                            <p>np01nt4s210034@islingtoncollege.edu.np (College Mail Address)</p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="common leftSide contact ">Projects Conducted</th>
+                        <th class="common rightSide projectInformation ">
+                            <ol>
+                                <li>Logo Design for YouTube</li>
+                                <li>Favicon design for my spotify playlist</li>
+                                <li>Website of Myself</li>
+                                <li>Development of Database for E-wallet using SQL</li>
+                                <li>Designing LAN with Assignment of Ip-address to each host</li>
+                            </ol>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="common leftSide educationalBackground ">Educational Background</th>
+                        <th class="common rightSide educationInformation ">
+                            <ul>
+                                <li>Passed 6th grade from Suryodaya English Boarding School (2006-2014)</li>
+                                <li>Passed DLE (District Level Education) from Galaxy Public School with 62% (2016)
+                                </li>
+                                <li>Passed SEE (Secondary Education Examination) from Galaxy Public School with 3.6 CGPA (2018</li>
+                                <li>Passed +2 from Liverpool Int'l College with 3.5 CGPA (2020)</li>
+                                <li>Currently a disciple of Isligton College (2020 onwards)</li>
+                            </ul>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="common leftSide volunteeringExperience ">Volunteering Background </th>
+                        <th class="common rightSide volunterringInformation ">
+                            <ul>
+                                <li>Web Development (2020 May 20th)</li>
+                                <li>Java App Design (2020 April 29th)</li>
+                                <li>Databse Design (2020 April 2nd)</li>
+                            </ul>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="common leftSide skills ">Skills</th>
+                        <th class="common rightSide skillInformation ">
+                            <ul>
+                                <li>JAVA</li>
+                                <li>Web Development</li>
+                                <li>Database Design</li>
+                                <li>Network Design</li>
+                                <li>Retouching in Photoshop</li>
+                            </ul>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="common leftSide certifications ">Certifications</th>
+                        <th class="common rightSide c ertificationsInformation ">
+                            <ul>
+                                <li>Intermediate Photoshop Designer (2019)</li>
+                                <li>Java Developer (2019)</li>
+                                <li>Website Designer (2020)</li>
+                            </ul>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="common leftSide achievement ">Awards Achievement</th>
+                        <th class="common rightSide achievementInformation ">
+                            <ul>
+                                <li>Intershool Football Tournament 2nd position</li>
+                                <li>Interschool Cricket Tournament 1st position</li>
+                                <li>Interschool Badmintion Tournament 2nd position</li>
+                            </ul>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- footer section contains links and copyright content and gets its style from the main css file -->
+    <footer class="footer ">
+        <div class="mainFooter ">
+            <ul class="footerContainer ">
+                <li class="footerHref "><a href="_target">About</a></li>
+                <li class="footerHref "><a href="_target">FAQ's</a></li>
+                <li class="footerHref "><a href="_target">Services</a></li>
+                <li class="footerHref "><a href="_target">Policies</a></li>
+                <li class="footerHref "><a href="_target">API</a></li>
+                <li class="footerHref "><a href="_target">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="copyrightFooter ">&copy; Copyright | Bisham Kunwor</div>
+    </footer>
+</body>
+
+</html>

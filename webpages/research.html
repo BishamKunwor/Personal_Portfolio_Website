@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+
+    <link rel="stylesheet" href="../css/HeaderFooter.css">
+    <link rel="shortcut icon" href="../photos/research.jpg" type="image/x-icon">
+
+    <style>
+        /* common styles for all four flyer */
+        
+        .researchOne,
+        .researchTwo,
+        .researchThree,
+        .researchFour,
+        .researchFive {
+            position: absolute;
+            top: 25%;
+            left: 40%;
+            box-sizing: border-box;
+            height: 250px;
+            width: 250px;
+            background-color: white;
+            margin: 120px auto;
+            box-shadow: 0px 4px 48px -3px rosybrown;
+            transition: .3s;
+            padding: 0px 20px;
+            border-radius: 24px;
+        }
+        /* hover effects on these flyers enlarges them */
+        
+        .researchOne:hover,
+        .researchTwo:hover,
+        .researchThree:hover,
+        .researchFour:hover,
+        .researchFive:hover {
+            transform: scale(1.2, 1.2);
+        }
+        /* styling heading inside the box title  */
+        
+        .boxHeading {
+            background-color: white;
+            font-size: 40px;
+            font-weight: 600;
+            padding-top: 60px;
+        }
+        /* matching backgound color of title with the box  */
+        
+        .insideBoxHeading {
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- All the header icon and menu contains in header section -->
+    <header class="header">
+        <div class="navigationContainer">
+            <div><a href="../home.html" class="logo">N</a> </div>
+            <div class="menuBar">
+                <ul class="menuContainer">
+                    <li><a class="menu" href="../home.html">Home</a></li>
+                    <li><a class="menu1" href="cv.html">CV</a></li>
+                    <li><a class="menu1" href="blog.html">Blog</a></li>
+                    <li><a class="menu" href="research.html">Research</a></li>
+                    <li><a class="menu" href="contact.html">Contact us</a></li>
+                    <li><a class="menu" href="register.html">Register</a></li>
+                    <li><a class="menu" href="login.html">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- all the flyer boxes are contained inside section container -->
+    <section class="sectionOfResearch" style="text-align: center;">
+        <!-- container for third steps -->
+        <div class="researchOne" style="top: 45%;
+        left: 30%;
+        z-index: 2;
+        transform-origin: left center;
+        padding-top: 40px;">
+            <div class="boxHeading">
+                <a href="third-step.html" class="insideBoxHeading">Third Step</a>
+            </div>
+        </div>
+
+        <!-- container for inititation idea -->
+
+        <div class="researchTwo" style="top: 6%;
+        left: 30%;
+        z-index: 3;
+        transform-origin: top center;">
+            <div class="boxHeading">
+                <a href="Initiation-Idea.html" class="insideBoxHeading">Inititation Idea</a>
+            </div>
+        </div>
+        <!-- container for one more thought -->
+
+        <div class="researchThree" style="top: 45%;
+        left: 50%;
+        z-index: 4;
+        transform-origin: bottom center;
+        padding-top: 20px;">
+            <div class="boxHeading">
+                <a href="one-more-thought.html" class="insideBoxHeading">One More Thought</a>
+            </div>
+        </div>
+        <!-- container for second steps -->
+
+        <div class="researchFour" style="top: 6%;
+        left: 50%;
+        z-index: 5;
+        transform-origin: right center;">
+            <div class="boxHeading">
+                <a href="second-step.html" class="insideBoxHeading">Second Step</a>
+            </div>
+        </div>
+
+        <!-- container for final idea -->
+
+        <div class="researchFive" style="z-index: 10;
+        font-size: 40px;
+        font-weight: 600;
+        padding-top: 90px;">
+            <a href="Final-idea.html" class="insideBoxHeading">Final Idea</a>
+        </div>
+
+    </section>
+
+    <!-- footer section contains links and copyright content and gets its style from the main css file -->
+    <footer class="footer">
+        <div class="mainFooter">
+            <ul class="footerContainer">
+                <li><a href="_blank">About</a></li>
+                <li><a href="_blank">FAQ's</a></li>
+                <li><a href="_blank">Services</a></li>
+                <li><a href="_blank">Policies</a></li>
+                <li><a href="_blank">API</a></li>
+                <li><a href="_blank">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="copyrightFooter">&copy; Copyright | Bisham Kunwor</div>
+    </footer>
+
+</body>
+
+</html>

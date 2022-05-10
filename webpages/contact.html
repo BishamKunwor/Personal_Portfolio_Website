@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../css/HeaderFooter.css" />
+    <link rel="shortcut icon" href="../photos/contact.png" type="image/x-icon" />
+
+    <!-- all the common css properties are defined here -->
+    <style>
+        /* heading of the page styling */
+        
+        .contactHeading,
+        .contactHeadingOne {
+            font-size: 40px;
+            position: absolute;
+        }
+        /* transistion for all input fields  */
+        
+        .contactInput {
+            transition: .2s;
+        }
+        /* for all the input types having similar properties */
+        
+        .contactInput,
+        .feedbackBox,
+        .submit {
+            width: 200px;
+            background-color: white;
+            color: #05386b;
+            height: 50px;
+            text-align: center;
+            font-size: 22px;
+            margin: 20px 0px;
+            border-radius: 24px;
+            outline: none;
+            border: 2px solid #05386b;
+            padding: 0px 30px;
+        }
+        /* for hover and focus effect styling */
+        
+        .contactInput:hover,
+        .feedbackBox:hover {
+            border: 2px solid red;
+        }
+        
+        .contactInput:focus {
+            width: 350px;
+        }
+        
+        .feedbackBox:focus {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .submit:hover {
+            background-color: #05386b;
+            color: white;
+        }
+        
+        .submit:active {
+            background-color: white;
+            color: #05386b;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- All the header icon and menu contains in header section -->
+    <header class="header">
+        <div class="navigationContainer">
+            <div><a href="../home.html" class="logo">N</a></div>
+            <div class="menuBar">
+                <ul class="menuContainer">
+                    <li><a class="menu" href="../home.html">Home</a></li>
+                    <li><a class="menu1" href="cv.html">CV</a></li>
+                    <li><a class="menu1" href="blog.html">Blog</a></li>
+                    <li><a class="menu" href="research.html">Research</a></li>
+                    <li><a class="menu" href="contact.html">Contact us</a></li>
+                    <li><a class="menu" href="register.html">Register</a></li>
+                    <li><a class="menu" href="login.html">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="contactSection">
+        <!-- form container and all contents start from here  -->
+        <form class="form" name="formInfo" onsubmit="formValidation()">
+            <div class="contactHeadingContainer" style="height: 14vh;">
+                <span class="contactHeading" style="top: 12vh;
+                left: 39%;">We are here for you.</span>
+                <span class="contactHeadingOne" style="left: 36.5%;
+                top: 17vh;">Fill out the form to reach us.</span>
+            </div>
+            <!-- all the input fields are contained inside below div -->
+            <div class="formContainer" style="width: 400px;
+            position: absolute;
+            top: 25vh;
+            left: 38%;
+            text-align: center;">
+                <input type="text" placeholder=" Name " id=" Name " class=" contactInput " name="username" />
+                <input type=" email " placeholder=" Email address " id=" Email " class=" contactInput " name="email" />
+                <input type=" text " placeholder=" 9817843517 " id=" phone " class=" contactInput " name="phone" />
+                <input type=" text " class=" feedbackBox " placeholder=" Your Message. " name="message" style="transition: .2s;" />
+                <button class=" submit " style="    margin-top: 40px;
+                margin-left: 20px;
+                transition: .5s;
+                cursor: pointer;">Submit</button>
+            </div>
+        </form>
+
+        <!-- form validation js -->
+        <script>
+            function formValidation() {
+                var name = document.forms["formInfo"]["username"].value;
+                var email = document.forms["formInfo"]["email"].value;
+                var phone = document.forms["formInfo"]["phone"].value;
+                var message = document.forms["formInfo"]["message"].value;
+                console.log(" hello ");
+                if (name == "" || email == "" || phone == "" || message == "") {
+                    alert(" Please fill all the fields. ");
+                } else {
+                    alert(" Thank you for your feedback, we will get into touch. ");
+                }
+            }
+        </script>
+    </section>
+
+
+    <!-- footer section contains links and copyright content and gets its style from the main css file -->
+    <footer class=" footer ">
+        <div class=" mainFooter ">
+            <ul class=" footerContainer ">
+                <li><a href="_blank">About</a></li>
+                <li><a href="_blank">FAQ's</a></li>
+                <li><a href="_blank">Services</a></li>
+                <li><a href="_blank">Policies</a></li>
+                <li><a href="_blank">API</a></li>
+                <li><a href="_blank">Feedback</a></li>
+            </ul>
+        </div>
+        <div class=" copyrightFooter ">&copy; Copyright | Bisham Kunwor</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- provides header footer and common right flyer styling to the homepage -->
+    <link rel="stylesheet" href="css/HeaderFooter.css">
+
+    <link rel="shortcut icon" href="photos/home.jpg" type="image/x-icon">
+
+    <style>
+        /* hover effect for the left side page description */
+        
+        .sectionOne:hover {
+            transform: scale(1.035, 1.035);
+        }
+        /* right side page information container flyer styles */
+        
+        .cvContainer,
+        .researchContainer,
+        .blogContainer,
+        .contactContainer {
+            box-sizing: border-box;
+            height: 350px;
+            width: 350px;
+            background-color: white;
+            margin: 40px 40px;
+            box-shadow: 0px 4px 48px -3px rosybrown;
+            transition: transform .3s, box-shadow .3s;
+            padding: 0px 20px;
+            text-align: center;
+            border-radius: 24px;
+            font-size: 22px;
+            display: grid;
+            grid-template-rows: .15fr .65fr .20fr;
+        }
+        
+        .cvContainer:hover,
+        .blogContainer:hover,
+        .researchContainer:hover,
+        .contactContainer:hover,
+        .sectionOne:hover {
+            transform: scale(1.1, 1.1);
+            box-shadow: 0px 4px 96px -10px rosybrown;
+        }
+        /* right side flyer content box styling ends here */
+        
+        .sectionTwo a {
+            background-color: #00bbf9;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- All the header icon and menu contains in header section -->
+    <header class="header">
+        <div class="navigationContainer">
+            <div><a href="home.html" class="logo">N</a> </div>
+            <div class="menuBar">
+                <ul class="menuContainer">
+                    <li><a class="menu" href="home.html">Home</a></li>
+                    <li><a class="menu1" href="webpages/cv.html">CV</a></li>
+                    <li><a class="menu1" href="webpages/Blog.html">Blog</a></li>
+                    <li><a class="menu" href="webpages/research.html">Research</a></li>
+                    <li><a class="menu" href="webpages/contact.html">Contact us</a></li>
+                    <li><a class="menu" href="webpages/register.html">Register</a></li>
+                    <li><a class="menu" href="webpages/login.html">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- this is the actual body content of the webpage  -->
+    <!-- here the section is divided into two columns (one for webpage description and second for all the floting flyer about other pages) -->
+    <section class="sectionOfHome" style="display: grid; grid-template-columns: .50fr .50fr;">
+
+        <!-- this is the big box section of web description  -->
+        <!-- all the position and styling of the flyer is done inline with position placement -->
+        <div class="sectionOne" style="background-color: white;
+        border-radius: 40px;
+        width: 800px;
+        margin: 30px 80px;
+        box-shadow: 0px 4px 48px -3px rosybrown;
+        text-align: center;
+        transition: .3s;">
+
+            <!-- heading of the webpage description flyer -->
+            <h1 class="sectionOneHeading" style="background-color: white;
+            margin-top: 40px;
+            font-size: 40px;">Webpage Description</h1>
+            <!-- horizontal lines in webpage description are managed here  -->
+            <hr style="height: 0px;
+            margin: 20px 100px;
+            opacity: .5;">
+            <!-- paragraph content styling -->
+            <p class="sectionOneParagraph" style="background-color: white;
+            font-size: 26px;
+            text-align: justify;
+            margin: 60px 60px;
+            line-height: 45px;">This website is the reflection of all that is learned during our course on Introduction to Information Technology. This is my final assessment project for 1st semester lead us by Hrishav Tandukar. The website contains a CV section where all
+                my educational and career background is mentioned with all my experience with technology. The blog section explores about the technology affection our daily activities. The research section lets users discover how the website was created
+                and inspired. The contact us section lets users contact us directly for any qurey they have.</p>
+        </div>
+
+        <!-- all the other page director flyer are contained in the below div -->
+        <!-- two columns are seperate in order to represent pair of flyer together -->
+        <div class="sectionTwo" style="height: 850px;
+        display: grid;
+        grid-template-columns: .75fr .25fr;">
+
+            <!-- flyer for cv -->
+            <div class="cvContainer">
+                <h2 class="CV">CV</h2>
+                <hr>
+                <div class="content">Hello everyone, I am Bisham kunwor, currently one of a disciple of Islington College. Currently I am learning front-end web developer.</div>
+                <button class="readMore"><a href="webpages/cv.html">Read More</a></button>
+            </div>
+            <!-- flyer for div -->
+            <div class="blogContainer">
+                <h2 class="CV">Blog</h2>
+                <hr>
+                <div class="content">This blog dives deep to explore the effects of technology in our daily activities and how it is affecting our dision making capability.</div>
+                <button class="readMore"><a href="webpages/Blog.html">Read More</a></button>
+            </div>
+            <!-- flyer for research -->
+            <div class="researchContainer">
+                <h2 class="CV">Research</h2>
+                <hr>
+                <div class="content">Want to learn how this website was created. All the design that are used in the website is influenced from somewhere by various other websites.</div>
+                <button class="readMore"><a href="webpages/research.html">Read More</a></button>
+            </div>
+            <!-- flyer for contact section -->
+            <div class="contactContainer">
+                <h2 class="CV">Contact</h2>
+                <hr>
+                <div class="content">We are always here for you. Need any help or assistance, feel free to contact us anytime. All your problems will be solved by our professional team.</div>
+                <button class="readMore"><a href="webpages/contact.html">Read More</a></button>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- footer section contains links and copyright content -->
+
+    <footer class="footer">
+        <div class="mainFooter">
+            <ul class="footerContainer">
+                <li><a href="_blank">About</a></li>
+                <li><a href="_blank">FAQ's</a></li>
+                <li><a href="_blank">Services</a></li>
+                <li><a href="_blank">Policies</a></li>
+                <li><a href="_blank">API</a></li>
+                <li><a href="_blank">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="copyrightFooter">&copy; Copyright | Bisham Kunwor</div>
+    </footer>
+
+
+</body>
+
+</html>

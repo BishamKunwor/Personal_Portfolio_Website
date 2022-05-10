@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Idea</title>
+    <link rel="stylesheet" href="../css/HeaderFooter.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .inspiredPage {
+            background: url(../photos/final-idea.PNG) no-repeat;
+            left: 4em;
+            background-size: cover;
+        }
+        
+        .myPage {
+            background: url(../photos/my-page-final.PNG) no-repeat;
+            right: 4em;
+            background-size: cover;
+        }
+        
+        h1 {
+            font-size: 2rem;
+        }
+        
+        hr {
+            opacity: .2;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        span {
+            display: inline-block;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin: 1em 1.1em;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- All the header icon and menu contains in header section -->
+    <header class="header">
+        <div class="navigationContainer">
+            <div><a href="../home.html" class="logo">N</a> </div>
+            <div class="menuBar">
+                <ul class="menuContainer">
+                    <li><a class="menu" href="../home.html">Home</a></li>
+                    <li><a class="menu1" href="cv.html">CV</a></li>
+                    <li><a class="menu1" href="Blog.html">Blog</a></li>
+                    <li><a class="menu" href="research.html">Research</a></li>
+                    <li><a class="menu" href="contact.html">Contact us</a></li>
+                    <li><a class="menu" href="register.html">Register</a></li>
+                    <li><a class="menu" href="login.html">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-main">
+        <a href="https://app.slidebean.com/signup">
+            <!-- delays and changes the picture  -->
+            <div class="inspiredPage screenshot cmn" onmouseover="setTimeout(changePicture,150)" onmouseout="setTimeout(originalPicture, 150)"></div>
+        </a>
+        <script>
+            // change picture of inspired page function starts here 
+            function changePicture() {
+                var data = document.getElementsByClassName("inspiredPage")[0];
+                data.style.cssText = "background: url(../photos/final-idea-2.PNG) no-repeat; background-size: cover;";
+            }
+
+            // after mouse gets off the script is places original picture 
+            function originalPicture() {
+                document.getElementsByClassName("inspiredPage")[0].style.cssText = "background: url(../photos/final-idea.PNG) no-repeat; background-size: cover;";
+            }
+            // changes the picture of my page 
+
+            function changePictureMyPage() {
+                var data = document.getElementsByClassName("myPage")[0];
+                data.style.cssText = "background: url(../photos/my-page-final-1.PNG) no-repeat; ";
+            }
+            to
+
+            function original() {
+                document.getElementsByClassName("myPage")[0].style.cssText = "background: url(../photos/my-page-final.PNG) no-repeat;";
+            }
+        </script>
+        <a href="../home.html">
+            <div class="myPage screenshot cmn" onmouseover="setTimeout(changePictureMyPage(), 150)" onmouseout="setTimeout(original, 150)"></div>
+        </a>
+        <!-- comparision box below here  -->
+        <div class="letterContainer cmn">
+            <div class="leftPage comparisionContainer">
+                <div class="heading">
+                    <h1>Inspired Page</h1>
+                </div>
+                <hr>
+                <span>While searching for some website, slidebean was encountered where the sign-up page facinated
+                        the design aspect of the designer. The designer used shadow to provide a 3d effect of depth of
+                        field to the flyer card. This stroke me an idea to create hover effect on the boxes that are
+                        used in my site.
+                    </span>
+            </div>
+            <div class="lineSeparator"></div>
+            <div class="rightPage comparisionContainer">
+                <div class="heading">
+                    <h1>My Page</h1>
+                </div>
+                <hr>
+                <span>
+                        The end goal in this website is to provide hover effect in every box element that is present
+                        inside this site. To make the illusion of the 3d hover effect, scaling had to be done. With the
+                        scaling, box shadow was introduced to give the box depth of field. The shadow also needed more
+                        spread to make the 3d effect illusion.
+                    </span>
+            </div>
+        </div>
+    </section>
+    <!-- footer section contains links and copyright content and gets its style from the main css file -->
+
+    <footer class="footer">
+        <div class="mainFooter">
+            <ul class="footerContainer">
+                <li><a href="_blank">About</a></li>
+                <li><a href="_blank">FAQ's</a></li>
+                <li><a href="_blank">Services</a></li>
+                <li><a href="_blank">Policies</a></li>
+                <li><a href="_blank">API</a></li>
+                <li><a href="_blank">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="copyrightFooter">&copy; Copyright | Bisham Kunwor</div>
+    </footer>
+
+</body>
+
+</html>

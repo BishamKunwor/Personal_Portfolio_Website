@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- gets header footer css from main file -->
+    <link rel="stylesheet" href="../css/HeaderFooter.css">
+    <link rel="shortcut icon" href="../photos/blog.png" type="image/x-icon">
+
+    <!-- all the common css properties are defined here -->
+    <style>
+        /* styles the container for the blog content */
+        
+        .contentOne,
+        .contentTwo,
+        .contentThree {
+            box-sizing: border-box;
+            margin-left: 2%;
+            background-color: white;
+            height: 650px;
+            width: 1300px;
+            border-radius: 30px;
+            box-shadow: 0px 4px 26px -5px rosybrown;
+            transition: box-shadow .3s, transform cubic-bezier(0.075, 0.82, 0.165, 1) .3s, z-index .3s, margin-top .3s;
+            position: absolute;
+            display: grid;
+            grid-template-rows: .90fr .10fr;
+            text-align: center;
+            padding: 0 60px;
+            padding-top: 40px;
+            letter-spacing: 1.5px;
+        }
+        
+        .contentOne:hover,
+        .contentTwo:hover,
+        .contentThree:hover {
+            transform: scale(1.05, 1.05);
+            box-shadow: 0px 4px 86px -5px rosybrown;
+            z-index: 1;
+        }
+        /* this is the style for the heading of each paragraph */
+        
+        .titleOfContent {
+            background-color: transparent;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        /* style the paragraphs according to our layout */
+        
+        .contentInsideBox {
+            background-color: white;
+            font-size: 20px;
+            line-height: 30px;
+        }
+        
+        .contentText {
+            background-color: transparent;
+            text-align: justify;
+            margin: 5px 5px;
+        }
+        /* styles the main title i.e. introduction, effects and conclusion at bottom of flyer */
+        
+        .title {
+            font-size: 40px;
+            font-weight: 600;
+            width: 50%;
+            margin: auto;
+            background-color: white;
+        }
+        
+        .cvContainerInBlog,
+        .researchContainerInBlog {
+            box-sizing: border-box;
+            height: 350px;
+            width: 350px;
+            background-color: white;
+            margin: 60px 40px;
+            box-shadow: 0px 4px 48px -3px rosybrown;
+            transition: transform .3s, box-shadow .3s;
+            padding: 0px 20px;
+            text-align: center;
+            border-radius: 24px;
+            font-size: 22px;
+            display: grid;
+            grid-template-rows: .15fr .65fr .20fr;
+        }
+        /* this is the hover effect on the snippet flyer on the right side */
+        
+        .cvContainerInBlog:hover,
+        .researchContainerInBlog:hover {
+            transform: scale(1.1, 1.1);
+            box-shadow: 0px 4px 96px -10px rosybrown;
+        }
+    </style>
+</head>
+
+<!-- divides the body in three parts using css i.e., header section and footer  -->
+
+<body style="display: grid; grid-template-rows: .10fr .80fr .10fr;">
+
+    <!-- All the header icon and menu contains in header section -->
+    <header class="header">
+        <div class="navigationContainer">
+            <div><a href="../home.html" class="logo">N</a> </div>
+            <div class="menuBar">
+                <ul class="menuContainer">
+                    <li><a class="menu" href="../home.html">Home</a></li>
+                    <li><a class="menu1" href="cv.html">CV</a></li>
+                    <li><a class="menu1" href="Blog.html">Blog</a></li>
+                    <li><a class="menu" href="research.html">Research</a></li>
+                    <li><a class="menu" href="contact.html">Contact us</a></li>
+                    <li><a class="menu" href="register.html">Register</a></li>
+
+                    <li><a class="menu" href="login.html">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Divides the section intwo two parts where first is the blog content and second is the floting cards i.e., cv and research -->
+    <!-- height is used to prevent overflow of the document -->
+    <section class="sectionOfBlog" style="height: 820px; display: grid; grid-template-columns: .95fr .05fr;">
+
+        <div class="leftContent">
+            <!-- this is the conclusion section of the blog -->
+            <div class="contentOne" style="margin-top: 170px;">
+                <div class="contentInsideBox">
+                    <p class="contentText firstParagraph">There are three different categories of technology (communication, research and medical). All of these technology has made human life easier and saved a lot of time and energy. Currently each of these techonology is being used by millions
+                        of people to make or help to make human effort minimum by maximizing the use of technology. The impact of these technology on particular human depends upon the use of technology by the particular user. If someone uses technology
+                        to gain more knowledge and wisdom then they are rewarded with such many resources to help them. But if someone intends to use it to spend their time, use it in unwanted situation, then they will surely get affected as they depend
+                        too much upon technology to perform certain task.</p>
+                    <p class="contentText secondParagraph">Research has shown that in these consecutive years upto 2020, the use of social media increased exponentially. With wide use of these technology, more reports suggest that there were a lot of harrasment and child exploitation cases
+                        during these time. The only thing that seperate the technology use the mindset and people perspective towards it. Technology lets all of us to make our life eaier with its use but it also gives out our personal interest to be publicly
+                        available to all the users who are connected to the internet.
+                    </p>
+                </div>
+                <span class="title">Conclusion</span>
+            </div>
+            <!-- this is the effects section of the blog -->
+            <div class="contentTwo" style="margin-top: 100px;">
+                <div class="contentInsideBox">
+                    <span class="titleOfContent">Positive impact of technology </span>
+                    <p class="contentText firstParagraph">One of the best use of technology (mainly Communication Technology) is to connect human around the world. People all over the world uses internet as a medium to communicate and share their thoughts and opinions. Humans learn by looking,
+                        as told by many crasmatic person, is often true. People use YouTube and other social media platform to learn new things. Even us as student during this pandemic of COID-19 are using Google Classroom to learn and continue our academic
+                        activities. All of this inspires and help us lean towards better future. Learning something new is easy as there is always someone helping you to learn. Habits like reading news of all over the world and knowing talents helps us
+                        to reshape and build better thinking habit. It enables us to see the world through different perspective. </p>
+                    <span class="titleOfContent">Negative impact of technology </span>
+                    <p class="contentText firstParagraph">With every advancement in anything human conquer rapidly have a lots of cavieat. Relating this to the technology used today, it also have its own flaws. Although, technology has connected us but many use it to exploit other's personality.
+                        Often people are to dependent on technology that to accomplish anything they need guidence. Obesity is one of the byproduct of bad use of technology. People use delivery apps that delivers items so, although they are connected
+                        to the world but they are not with their surroundings. It affects their mental and physical wellbeing. Cringe contents attracts a lot of people and instead of utilizing the technology to aquire new knowledge, we get involved and
+                        waste our precious time and energy to unnecessary things.</p>
+
+                </div>
+                <span class="title">Effects</span>
+            </div>
+
+            <!-- this is the introduction section of the blog -->
+            <div class="contentThree" style="margin-top: 20px;">
+                <div class="contentInsideBox">
+                    <span class="titleOfContent">Technology Evolution</span>
+                    <p class="contentText firstParagraph">As the dawn of 20th century, mankind has already started to push the limitation and boundry of technology. Technology started to develop at ramplant pase when semiconductor were introduced. Semiconductor has a special use as its dye
+                        size gets shrunken by human techniques to few nanometers, this enables us to embed more and more transistor in compact node. </p>
+
+                    <span class="titleOfContent secondTitle">Technology Used</span>
+                    <p class="contentText paragraph">Technology is reshaping our lives by unscalable amount. Technology are majorly categorised into 3 types: Communication technology (often used by all of us to communicate with each other), Research technology (often used in conducting
+                        research, building efficient energy and power sources) and Medical technology (often used for treatment of the patient). </p>
+
+                    <p class="contentText thirdParagraph">Using all the technology, humans have reshaped their day to day activities and habits of performing task. Overall, all the technology uses internet connection in order to communicate and efficiently perform task. All of this dependency
+                        of humans towards technology have various impacts on ourselves. </p>
+                </div>
+                <span class="title">Introduction</span>
+            </div>
+        </div>
+
+        <!-- buttons -->
+        <!-- floating buttons and links to the right side are contined here -->
+        <div class="sectionTwoInBlog">
+            <div class="cvContainerInBlog">
+                <h2 class="CV">CV</h2>
+                <hr>
+                <div class="content" style="margin-top: 20px;">Hello everyone, I am Bisham kunwor, currently one of a disciple of Islington College. Currently I am learning front-end web developer.</div>
+                <button class="readMore"><a href="cv.html" style="background-color: transparent; color:white;">Read
+                            More</a></button>
+            </div>
+
+            <div class="researchContainerInBlog">
+                <h2 class="CV">Research</h2>
+                <hr>
+                <div class="content" style="margin-top: 20px;">Want to learn how this website was created. All the design that are used in the website is influenced from somewhere by various other websites.
+                </div>
+                <button class="readMore"><a href="research.html"
+                            style="background-color: transparent; color:white;">Read More</a></button>
+            </div>
+
+            <!-- button ends here -->
+
+    </section>
+
+    <!-- footer section contains links and copyright content and gets its style from the main css file -->
+    <footer class="footer">
+        <div class="mainFooter">
+            <ul class="footerContainer">
+                <li><a href="_blank">About</a></li>
+                <li><a href="_blank">FAQ's</a></li>
+                <li><a href="_blank">Services</a></li>
+                <li><a href="_blank">Policies</a></li>
+                <li><a href="_blank">API</a></li>
+                <li><a href="_blank">Feedback</a></li>
+            </ul>
+        </div>
+        <div class="copyrightFooter">&copy; Copyright | Bisham Kunwor</div>
+    </footer>
+
+</body>
+
+</html>

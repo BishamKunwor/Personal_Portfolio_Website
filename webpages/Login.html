@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="../photos/login.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0%;
+            background-color: #f8edeb;
+        }
+        
+        body {
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+            color: #05386b;
+        }
+        
+        .imageHeader {
+            width: 240px;
+            margin-top: 30.4px;
+        }
+        
+        .heading {
+            font-size: 40px;
+            margin-bottom: 3%;
+        }
+        
+        label {
+            font-size: 18.4px;
+        }
+        
+        .emailLabel {
+            margin-left: -225px;
+        }
+        
+        .passwordLabel {
+            margin-left: -256px;
+        }
+        
+        .forgotLabel,
+        .radioInput {
+            margin-left: -193px;
+        }
+        
+        .Input {
+            margin-top: 12px;
+            background-color: white;
+            border: solid 1px;
+            border-color: #05386b;
+            font-size: large;
+            min-width: 320px;
+            height: 42px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 6px;
+            outline: none;
+        }
+        
+        .loginButton {
+            width: 360px;
+            border-radius: 6px;
+            height: 52px;
+            background-color: #05386b;
+            color: white;
+            font-size: x-large;
+        }
+        
+        footer {
+            margin-top: 260px;
+            text-align: left;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .Input:hover {
+            border-width: 2.5px;
+        }
+        
+        .loginButton:hover {
+            background-color: #0b59a7;
+        }
+        
+        .loginButton:active {
+            background-color: #2f6daa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="../home.html"><img src="../photos/logo.png" class="imageHeader"></a>
+        </div>
+    </header>
+
+    <section>
+
+        <form action="home.html">
+
+            <h1 class="heading">Login to your account.</h1>
+
+            <div>
+                <!-- input text for email and it cannot be empty -->
+                <label for="username" class="emailLabel">Email address</label>
+                <br>
+                <input type="email" placeholder="Email address" name="email" id="email" required class="Input">
+                <br>
+                <br>
+            </div>
+
+            <div>
+                <!-- input box for password where password field must not be empty -->
+                <label for="password" class="passwordLabel">Password</label>
+                <br>
+                <input type="password" placeholder="Password" id="password" required name="password" class="Input">
+                <br>
+                <br>
+            </div>
+
+            <label for="forgot-pass" class="forgotLabel">
+                    <a href="forgotPass.html">Forgot passsword.</a>
+                </label>
+            <br>
+            <br>
+            <br>
+
+            <!-- checkbox for autosaving password -->
+            <input type="checkbox" name="auto-save-password" id="remember-me" class="radioInput">
+            <label for="remember-me">Remember me</label>
+            <br>
+            <br>
+
+            <!-- goes to homepage after login -->
+            <button class="loginButton">Login</button>
+        </form>
+        <br>
+
+        <!-- if user don't have an account then from here redirect to signup page -->
+        <span>Don't have an account? <a href="register.html">Sign up</a></span>
+
+    </section>
+
+</body>
+
+</html>

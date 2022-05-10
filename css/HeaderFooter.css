@@ -1,0 +1,195 @@
+    /* universal section starts here */
+    
+    * {
+        margin: 0%;
+        padding: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #05386b;
+        background-color: #f8edeb;
+    }
+    
+    a {
+        text-decoration: none;
+        transition: .2s;
+    }
+    
+    a:hover {
+        color: rgb(41, 126, 255);
+    }
+    
+    ul {
+        list-style: none;
+    }
+    /* Universal section ends here */
+    /* header section starts here */
+    
+    .navigationContainer {
+        height: 7vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .logo {
+        font-size: 60px;
+        font-weight: bold;
+        position: absolute;
+        left: 10%;
+    }
+    
+    .menuContainer {
+        display: grid;
+        grid-template-columns: 85px 70px 83px 120px 130px 105px 100px;
+        font-size: 21px;
+        position: absolute;
+        top: 3vh;
+    }
+    
+    .menu {
+        padding: 12px 12px;
+        border-radius: 20px;
+        transition: .3s;
+    }
+    
+    .menu:hover,
+    .menu1:hover {
+        background-color: white;
+    }
+    
+    .menu1 {
+        padding: 12px 20px;
+        border-radius: 20px;
+        transition: .3s;
+    }
+    /* header section ends here */
+    /* footer section starts here */
+    
+    .footer {
+        z-index: -1;
+        display: grid;
+        grid-template-rows: 1fr .25fr;
+        position: absolute;
+        bottom: 0;
+        height: 5vh;
+        width: 100%;
+    }
+    
+    .footerContainer {
+        display: grid;
+        grid-template-columns: 100px 90px 100px 100px 80px 100px;
+        margin-left: 5%;
+        font-size: 18px;
+    }
+    
+    .copyrightFooter {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    /* footer section ends here */
+    /* research pages css starts here
+     */
+    /* css for bog and homepage */
+    
+    hr {
+        /* horizontal line for all flyer are maintained here */
+        height: 0px;
+        margin-top: 12px;
+        opacity: .5;
+    }
+    /* the readmore link container and button styling */
+    
+    .readMore {
+        background-color: #00bbf9;
+        color: white;
+        height: 40px;
+        border-radius: 6px;
+        outline: none;
+        cursor: pointer;
+        width: 160px;
+        border: none;
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        margin-left: 80px;
+        transition: .15s;
+        margin-bottom: 5%;
+    }
+    
+    .readMore:hover {
+        transform: scale(1.03, 1.03);
+        box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.5);
+    }
+    
+    .readMore:active {
+        transform: scale(1, 1);
+    }
+    /* this is the styling for heading of right side all flyer */
+    
+    .CV {
+        padding-top: 8px;
+        background-color: white;
+        font-size: xx-large;
+    }
+    /* styling for the shot synopsis for each page flyer */
+    
+    .content {
+        padding-top: 5px;
+        background-color: white;
+        text-align: justify;
+        line-height: 30px;
+        margin-bottom: 11%;
+    }
+    /* removing hyperlink default color in readmore text */
+    /* research page css styles starts from here  */
+    
+    .section-main {
+        background-color: rgba(188, 100, 100, .02);
+        width: 90%;
+        height: 80vh;
+        margin: 2em auto;
+        border-radius: 4em;
+        box-shadow: inset 6px 6px 8px -2px rgba(188, 143, 143, .6), inset -6px -6px 8px -2px rgba(255, 255, 255, .8);
+        position: relative;
+    }
+    
+    .letterContainer {
+        padding: 2em;
+        bottom: 4rem;
+        right: 12em;
+        width: 80%;
+        background-color: rgba(188, 100, 100, .02);
+        display: grid;
+        grid-template-columns: 1fr .01fr 1fr;
+        border-radius: 2em;
+    }
+    
+    .screenshot {
+        background-size: cover;
+        width: 40%;
+        border-radius: 2em;
+        top: 4em;
+    }
+    
+    .cmn {
+        box-shadow: 6px 6px 8px -2px rgba(188, 143, 143, .8), -6px -6px 8px -2px rgba(255, 255, 255, .8);
+        position: absolute;
+        height: 20rem;
+    }
+    
+    .lineSeparator {
+        background-color: white;
+        height: 100%;
+        width: 5px;
+    }
+    
+    .comparisionContainer {
+        text-align: justify;
+    }
+    
+    .heading {
+        text-align: center;
+    }
+    
+    .inspiredPage:hover,
+    .myPage:hover {
+        box-shadow: inset 6px 6px 8px -2px rgba(188, 143, 143, .6), inset -6px -6px 8px -2px rgba(255, 255, 255, .8);
+    }

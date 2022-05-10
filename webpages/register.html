@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="..\photos/register.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0%;
+            background-color: #f8edeb;
+        }
+        
+        .Input {
+            background-color: white;
+            border: solid 1px;
+            border-color: #05386b;
+            font-size: large;
+            min-width: 320px;
+            height: 42px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 6px;
+            margin-top: 12px;
+            outline: none;
+            cursor: text;
+        }
+        
+        .usernameHeading {
+            margin-left: -256px;
+        }
+        
+        .emailHeading {
+            margin-left: -222px;
+        }
+        
+        .passwordHeading {
+            margin-left: -198px;
+        }
+        
+        .cPasswordHeading {
+            margin-left: -187px;
+        }
+        
+        .username {
+            text-align: left;
+        }
+        
+        label {
+            font-size: 19.4px;
+        }
+        
+        .genderLabel {
+            margin-left: -161px;
+        }
+        
+        .dobLabel {
+            margin-left: -181px;
+        }
+        
+        .genderOption {
+            font-size: 15px
+        }
+        
+        .maleRadio {
+            margin-left: -11px;
+        }
+        
+        .selectDay,
+        .selectMonth,
+        .selectYear {
+            border-radius: 6px;
+            padding: 14px;
+            border: solid 1px;
+        }
+        
+        .selectMonth {
+            width: 80px;
+        }
+        
+        .selectDay {
+            width: 30px;
+            padding-left: 30px;
+            margin-left: -89px;
+        }
+        
+        .selectYear {
+            width: 40px;
+            padding-left: 30px;
+        }
+        
+        * {
+            margin: 0%;
+            background-color: #f8edeb;
+        }
+        
+        .sign-up:hover {
+            background-color: #0b59a7;
+        }
+        
+        .sign-up:active {
+            background-color: #2f6daa;
+            outline: none;
+        }
+        
+        .Input:hover,
+        .selectDay:hover,
+        .selectMonth:hover,
+        .selectYear:hover {
+            border-width: 2.5px;
+        }
+        
+        .sign-up {
+            min-height: 52px;
+            min-width: 400px;
+            background-color: #05386b;
+            color: white;
+            font-size: x-large;
+            border: 1px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;
+font-family: Helvetica, Arial, sans-serif;
+color: #05386b;">
+
+    <header>
+        <div>
+            <a href="../home.html"><img src="..\photos\logo.png" class="imageHeader" style="width: 240px;
+                margin-top: 30.4px;"></a>
+        </div>
+    </header>
+
+    <section>
+        <h1 class="sign-up-heading" style="font-size: 40px;
+        margin-top: 13.2px;
+        margin-bottom: 2%;">Sign up and get access to <br> my top contents.</h1>
+
+        <form action="login.html">
+
+            <div class="username-div">
+                <label for="username" class="usernameHeading">Username</label>
+                <br>
+                <input type="text" placeholder="Username" name="uid" required id="username" class="Input">
+                <br>
+                <br>
+            </div>
+
+
+            <label for="email" class="emailHeading">Email address</label>
+            <br>
+            <input type="email" placeholder="Email address" name="email" required id="email" class="Input">
+            <br>
+            <br>
+
+            <label for="password" class="passwordHeading">Create password</label>
+            <br>
+            <input type="password" placeholder="Create password" name="password" required id="password" class="Input">
+            <br>
+            <br>
+
+            <label for="confirm-pass" class="cPasswordHeading">Confirm Password</label>
+            <br>
+            <input type="password" placeholder="Confirm Password" name="confirm-pass" required id="confirm-pass" class="Input">
+            <br>
+            <br>
+            <br>
+
+            <div>
+                <label for="gender" class="genderLabel">What is your gender?</label>
+                <br>
+                <br>
+
+                <input type="radio" value="male" name="gender" id="male" class="maleRadio">
+                <label for="male" class="genderOption">Male</label>
+
+                <input type="radio" name="gender" id="female">
+                <label for="female" class="genderOption">Female</label>
+
+                <input type="radio" id="none" name="gender">
+                <label for="none" class="genderOption">Don't want to disclose.</label>
+
+            </div>
+            <br>
+
+            <div>
+                <label for="dob" class="dobLabel">Enter Date of Birth.</label>
+                <br>
+                <br>
+
+                <input type="text" maxlength="2" placeholder="DD" name="day" required class="selectDay">
+
+                <select name="Month" id="month" required class="selectMonth">
+                        <option value="" disabled="">Month</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sept</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select>
+
+                <input type="text" maxlength="4" placeholder="YYYY" name="year" required class="selectYear">
+
+            </div>
+            <br>
+            <div class="sign-up-button">
+                <button class="sign-up">Sign up</button>
+            </div>
+
+        </form>
+        <br>
+
+        <span>Already have an account. <a href="Login.html">login</a></span>
+
+    </section>
+
+
+</body>
+
+</html>
